@@ -4,11 +4,15 @@
   </div>
   <div class="footer-right">
     <nav>
+      {{ if .IsTranslated }}
       <ul>
-        {{ range $.Site.Home.AllTranslations }}
-          <li><a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a> </li>
+        {{ range .Translations }}
+        <li>
+          <a href="{{ .RelPermalink }}">{{ .Language.LanguageName }}</a>
+        </li>
         {{ end }}
       </ul>
+      {{ end }}
     </nav>
   </div>
 </footer>
