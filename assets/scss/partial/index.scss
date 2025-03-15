@@ -17,6 +17,7 @@
     margin-bottom: 1rem;
     margin-left: 0;
     list-style-type: none;
+    display: block;
 
     .meta {
       display: block;
@@ -32,13 +33,32 @@
     .post-item {
       display: flex;
       margin-bottom: 5px;
+      flex-direction: column;
 
       .meta {
         text-align: left;
       }
+
+      .post-thumbnail {
+        margin-bottom: 1rem;
+      }
     }
   }
 }
+
+@media (max-width: 480px) {
+  .post-list {
+    .post-item {
+      display: flex;
+      flex-direction: column;
+
+      .post-thumbnail {
+        margin-bottom: 1rem;
+      }
+    }
+  }
+}
+
 .project-list {
   padding: 0;
   list-style: none;
