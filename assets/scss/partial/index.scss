@@ -1,6 +1,18 @@
 .post-list {
   padding: 0;
 
+  .post-thumbnail {
+    display: inline-block;
+    float: left;
+    margin-right: 20px;
+    margin-bottom: 10px;
+    min-width: 200px;
+    height: 100px;
+    border-radius: 5px;
+    background-repeat: no-repeat;
+    object-fit: cover;
+  }
+
   .post-item {
     margin-bottom: 1rem;
     margin-left: 0;
