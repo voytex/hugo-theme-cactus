@@ -8,11 +8,11 @@
   {{ end }}
 
   {{ range (sort $pages "Date" "desc") }}
-    {{ $pageYear := (.Date.Format "2006") }}
+    {{/*  {{ $pageYear := (.Date.Format "2006") }}
     {{ if (ne $pageYear ($.Scratch.Get "year")) }}
     {{ $.Scratch.Set "year" $pageYear }}
     <h2>{{ $pageYear }}</h2>
-    {{ end }}
+    {{ end }}  */}}
     <li class="post-item">
       <div>
         <img src="{{ .Site.BaseURL }}{{ .Params.thumbnail }}" alt="{{ .Title }}" class="post-thumbnail" id="logo">
